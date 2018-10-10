@@ -1,0 +1,91 @@
+.home-container{
+    main{
+        overflow: hidden;
+        width: 100%;
+        overflow-y: scroll;
+        @include flexbox();
+        @include flex-direction(column);
+        >span{
+            background: #ebeceb;
+            height: 0.1rem;
+            display: block;
+            width: 100%;
+            text-indent: -999px;
+        }
+        >div{
+            width: 100%;
+            padding: 0.15rem 0.2rem;
+            h5{
+                font-size: 0.16rem;
+                color: #969fb1;
+            }
+            h4{
+                font-size: 0.16rem;
+                height: 0.34rem;
+                line-height: 0.34rem;
+                img{
+                    height: 0.24rem;
+                    line-height: 0.34rem;
+                }
+                em{
+                    margin-left:0.1rem; 
+                }
+            }
+            h2{
+                font-size: 0.20rem;
+                @include ellipsis(null,2);
+            }
+            h3{
+                @include ellipsis(null,2);
+                font-size: 0.16rem;
+                margin-top: 0.05rem;
+            }
+            >div{
+                margin-top: 0.1rem;
+                font-size: 0.14rem;
+                font-weight: 500;
+                @include flexbox();
+                @include flex-direction(row);
+                >i{
+                    height: 0.36rem;
+                    width: 1rem;
+                    text-align: center;
+                    background: #e7f3ff;
+                    display: inline-block;
+                    color: #1a89fb;
+                    line-height: 0.36rem;
+                }
+                >b{
+                    margin-left: 0.05rem;
+                    height: 0.36rem;
+                    width: 0.36rem;
+                    text-align: center;
+                    background: #e7f3ff;
+                    display: inline-block;
+                    color: #1a89fb;
+                    line-height: 0.36rem;
+                }
+                >em{
+                    height: 0.36rem;
+                    width: 1rem;
+                    text-align: center;
+                    display: inline-block;
+                    line-height: 0.36rem;
+                    color: #969fb1;
+                }
+                >span{
+                    line-height: 0.36rem;
+                    height: 0.36rem;
+                    color: #969fb1;
+                }
+                >p{
+                    margin-left: 0.1rem;
+                    line-height: 0.36rem;
+                    height: 0.36rem;
+                    color: #969fb1;
+                    display: inline-block;
+                }
+            }
+        }
+    }
+}

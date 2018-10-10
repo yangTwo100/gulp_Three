@@ -1,0 +1,15 @@
+{{#each data}}
+<span>1</span>
+<div>
+    <h5>热门内容，来自[{{actors.0.name}}]</h5>
+    <h4><img src="{{target.author.avatar_url}}"><em>{{target.author.name}}</em></h4>
+    <h2>{{target.question.title}}</h2>
+    <h3>{{target.excerpt}}</h3>
+    <div><i class="yo-ico">&#xe698;赞同<em>{{target.voteup_count}}</em></i>
+        <b class="yo-ico">&#xe610;</b>
+        <em class="yo-ico">&#xe668;&nbsp;评论<i>{{target.comment_count}}</i></em>
+        <span class="yo-ico">&#xe66b;</span>
+        <p>...</p>
+    </div>
+</div>
+{{/each}}
