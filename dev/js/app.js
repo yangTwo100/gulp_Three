@@ -3262,7 +3262,7 @@ eval("var g;\r\n\r\n// This works in non-strict mode\r\ng = (function() {\r\n\tr
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _indexj_header__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./indexj/header */ \"./src/js/indexj/header.js\");\n/* harmony import */ var _indexj_header__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_indexj_header__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _indexj_home_main__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./indexj/home_main */ \"./src/js/indexj/home_main.js\");\n\n\n_indexj_header__WEBPACK_IMPORTED_MODULE_0___default.a.render();\n_indexj_home_main__WEBPACK_IMPORTED_MODULE_1__[\"default\"].render();\n\n//# sourceURL=webpack:///./src/js/app.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _utils_router__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./utils/router */ \"./src/js/utils/router.js\");\n/* harmony import */ var _utils_routerMain__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./utils/routerMain */ \"./src/js/utils/routerMain.js\");\n/* harmony import */ var _indexj_header__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./indexj/header */ \"./src/js/indexj/header.js\");\n/* harmony import */ var _indexj_home_main__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./indexj/home_main */ \"./src/js/indexj/home_main.js\");\n/* harmony import */ var _indexj_home_recommend__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./indexj/home_recommend */ \"./src/js/indexj/home_recommend.js\");\n/* harmony import */ var _indexj_home_hot__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./indexj/home_hot */ \"./src/js/indexj/home_hot.js\");\n/* harmony import */ var _indexj_home_vedio__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./indexj/home_vedio */ \"./src/js/indexj/home_vedio.js\");\n/* harmony import */ var _indexj_idea__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./indexj/idea */ \"./src/js/indexj/idea.js\");\n/* harmony import */ var _indexj_collage__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./indexj/collage */ \"./src/js/indexj/collage.js\");\n/* harmony import */ var _indexj_message__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./indexj/message */ \"./src/js/indexj/message.js\");\n/* harmony import */ var _indexj_mine__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./indexj/mine */ \"./src/js/indexj/mine.js\");\n/* harmony import */ var _indexj_home_main_ibar__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./indexj/home_main_ibar */ \"./src/js/indexj/home_main_ibar.js\");\n\n\n\n\n\n\n\n\n\n\n\n\n_indexj_header__WEBPACK_IMPORTED_MODULE_2__[\"default\"].render();\n_indexj_header__WEBPACK_IMPORTED_MODULE_2__[\"default\"].ibar();\n_indexj_home_main__WEBPACK_IMPORTED_MODULE_3__[\"default\"].ibar();\n_indexj_home_main_ibar__WEBPACK_IMPORTED_MODULE_11__[\"default\"].ibar();\nvar router = new _utils_router__WEBPACK_IMPORTED_MODULE_0__[\"default\"]();\nrouter.init();\nrouter.route(\"#content\", _indexj_home_main__WEBPACK_IMPORTED_MODULE_3__[\"default\"].render);\nrouter.route(\"#recomend\", _indexj_home_recommend__WEBPACK_IMPORTED_MODULE_4__[\"default\"].render);\nrouter.route(\"#hot\", _indexj_home_hot__WEBPACK_IMPORTED_MODULE_5__[\"default\"].render);\nrouter.route(\"#vedio\", _indexj_home_vedio__WEBPACK_IMPORTED_MODULE_6__[\"default\"].render);\nvar routerMain = new _utils_routerMain__WEBPACK_IMPORTED_MODULE_1__[\"default\"]();\nrouterMain.init();\nrouterMain.route(\"#main\", _indexj_home_main__WEBPACK_IMPORTED_MODULE_3__[\"default\"].render);\nrouterMain.route(\"#ides\", _indexj_idea__WEBPACK_IMPORTED_MODULE_7__[\"default\"].render);\nrouterMain.route(\"#collage\", _indexj_collage__WEBPACK_IMPORTED_MODULE_8__[\"default\"].render);\nrouterMain.route(\"#message\", _indexj_message__WEBPACK_IMPORTED_MODULE_9__[\"default\"].render);\nrouterMain.route(\"#mine\", _indexj_mine__WEBPACK_IMPORTED_MODULE_10__[\"default\"].render);\n\n//# sourceURL=webpack:///./src/js/app.js?");
 
 /***/ }),
 
@@ -3278,6 +3278,17 @@ eval("__webpack_require__.r(__webpack_exports__);\nvar home_main = function home
 
 /***/ }),
 
+/***/ "./src/js/indexh/collage.html":
+/*!************************************!*\
+  !*** ./src/js/indexh/collage.html ***!
+  \************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("module.exports = \"<div>    这里是大学页面</div>\"\n\n//# sourceURL=webpack:///./src/js/indexh/collage.html?");
+
+/***/ }),
+
 /***/ "./src/js/indexh/header.html":
 /*!***********************************!*\
   !*** ./src/js/indexh/header.html ***!
@@ -3285,7 +3296,18 @@ eval("__webpack_require__.r(__webpack_exports__);\nvar home_main = function home
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("module.exports = \"<div class=\\\"home-container\\\">  <header>    <input class=\\\"yo-ico\\\" value=\\\"&#xe61a;支付宝公布中国锦鲤获奖者\\\"/>    <div><i class=\\\"yo-ico\\\">&#xe617;</i>      <em>提问</em></div>  </header>  <nav>    <ul>      <li class=\\\"active\\\">关注</li>      <li>推荐</li>      <li>热榜</li>      <li>视频</li>    </ul>  </nav>  <main></main>  <footer>    <ul>      <li class=\\\"footeractive\\\">        <i class=\\\"yo-ico\\\">&#xe61c;</i>        <em>首页</em>      </li>      <li>        <i class=\\\"yo-ico\\\">&#xe644;</i>        <em>想法</em>      </li>      <li>        <i class=\\\"yo-ico\\\">&#xe634;</i>        <em>大学</em>      </li>      <li>        <i class=\\\"yo-ico\\\">&#xe641;</i>        <em>消息</em>      </li>      <li>        <i class=\\\"yo-ico\\\">&#xe643;</i>        <em>我的</em>      </li>    </ul>  </footer></div>\"\n\n//# sourceURL=webpack:///./src/js/indexh/header.html?");
+eval("module.exports = \"<div class=\\\"home-container\\\">  <div class=\\\"uncommon\\\">    <header>      <input class=\\\"yo-ico\\\" value=\\\"&#xe61a;支付宝公布中国锦鲤获奖者\\\"/>      <div><i class=\\\"yo-ico\\\">&#xe617;</i>        <em>提问</em></div>    </header>    <nav>      <ul>        <li class=\\\"active\\\">关注</li>        <li>推荐</li>        <li>热榜</li>        <li>视频</li>      </ul>    </nav>      <main></main>  </div>  <footer>    <ul>      <li class=\\\"footeractive\\\">        <i class=\\\"yo-ico\\\">&#xe61c;</i>        <em>首页</em>      </li>      <li>        <i class=\\\"yo-ico\\\">&#xe644;</i>        <em>想法</em>      </li>      <li>        <i class=\\\"yo-ico\\\">&#xe634;</i>        <em>大学</em>      </li>      <li>        <i class=\\\"yo-ico\\\">&#xe641;</i>        <em>消息</em>      </li>      <li>        <i class=\\\"yo-ico\\\">&#xe643;</i>        <em>我的</em>      </li>    </ul>  </footer></div>\"\n\n//# sourceURL=webpack:///./src/js/indexh/header.html?");
+
+/***/ }),
+
+/***/ "./src/js/indexh/home_hot.html":
+/*!*************************************!*\
+  !*** ./src/js/indexh/home_hot.html ***!
+  \*************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("module.exports = \"<div>    这里是热榜页面</div>\"\n\n//# sourceURL=webpack:///./src/js/indexh/home_hot.html?");
 
 /***/ }),
 
@@ -3300,14 +3322,105 @@ eval("module.exports = \"{{#each data}}<span>1</span><div>    <h5>热门内容�
 
 /***/ }),
 
+/***/ "./src/js/indexh/home_main_ibar.html":
+/*!*******************************************!*\
+  !*** ./src/js/indexh/home_main_ibar.html ***!
+  \*******************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("module.exports = \"<header>    <input class=\\\"yo-ico\\\" value=\\\"&#xe61a;支付宝公布中国锦鲤获奖者\\\"/>    <div><i class=\\\"yo-ico\\\">&#xe617;</i>        <em>提问</em></div></header><nav><ul>    <li class=\\\"active\\\">关注</li>    <li>推荐</li>    <li>热榜</li>    <li>视频</li></ul></nav><main></main>\"\n\n//# sourceURL=webpack:///./src/js/indexh/home_main_ibar.html?");
+
+/***/ }),
+
+/***/ "./src/js/indexh/home_recommend.html":
+/*!*******************************************!*\
+  !*** ./src/js/indexh/home_recommend.html ***!
+  \*******************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("module.exports = \"<div>    这里是推荐页面</div>\"\n\n//# sourceURL=webpack:///./src/js/indexh/home_recommend.html?");
+
+/***/ }),
+
+/***/ "./src/js/indexh/home_vedio.html":
+/*!***************************************!*\
+  !*** ./src/js/indexh/home_vedio.html ***!
+  \***************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("module.exports = \"<div>    这里是视频页面</div>\"\n\n//# sourceURL=webpack:///./src/js/indexh/home_vedio.html?");
+
+/***/ }),
+
+/***/ "./src/js/indexh/idea.html":
+/*!*********************************!*\
+  !*** ./src/js/indexh/idea.html ***!
+  \*********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("module.exports = \"<div>    这里是想法页面</div>\"\n\n//# sourceURL=webpack:///./src/js/indexh/idea.html?");
+
+/***/ }),
+
+/***/ "./src/js/indexh/message.html":
+/*!************************************!*\
+  !*** ./src/js/indexh/message.html ***!
+  \************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("module.exports = \"<div>    这里是消息页面</div>\"\n\n//# sourceURL=webpack:///./src/js/indexh/message.html?");
+
+/***/ }),
+
+/***/ "./src/js/indexh/mine.html":
+/*!*********************************!*\
+  !*** ./src/js/indexh/mine.html ***!
+  \*********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("module.exports = \"<div>    这里是我的页面</div>\"\n\n//# sourceURL=webpack:///./src/js/indexh/mine.html?");
+
+/***/ }),
+
+/***/ "./src/js/indexj/collage.js":
+/*!**********************************!*\
+  !*** ./src/js/indexj/collage.js ***!
+  \**********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _indexh_collage_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../indexh/collage.html */ \"./src/js/indexh/collage.html\");\n/* harmony import */ var _indexh_collage_html__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_indexh_collage_html__WEBPACK_IMPORTED_MODULE_0__);\n\n\nvar render = function render() {\n  $(\".uncommon\").html(_indexh_collage_html__WEBPACK_IMPORTED_MODULE_0___default.a);\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n  render: render\n});\n\n//# sourceURL=webpack:///./src/js/indexj/collage.js?");
+
+/***/ }),
+
 /***/ "./src/js/indexj/header.js":
 /*!*********************************!*\
   !*** ./src/js/indexj/header.js ***!
   \*********************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-eval("var header = __webpack_require__(/*! ../indexh/header.html */ \"./src/js/indexh/header.html\");\n\nvar render = function render() {\n  document.querySelector(\"#root\").innerHTML = header;\n};\n\nmodule.exports = {\n  render: render\n};\n\n//# sourceURL=webpack:///./src/js/indexj/header.js?");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _indexh_header_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../indexh/header.html */ \"./src/js/indexh/header.html\");\n/* harmony import */ var _indexh_header_html__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_indexh_header_html__WEBPACK_IMPORTED_MODULE_0__);\n\n\nvar render = function render() {\n  document.querySelector(\"#root\").innerHTML = _indexh_header_html__WEBPACK_IMPORTED_MODULE_0___default.a;\n};\n\nvar ibar = function ibar() {\n  $(\"footer li\").on(\"tap\", function () {\n    var hashes = ['#main', '#ides', '#collage', '#message', '#mine'];\n    location.hash = hashes[$(this).index()];\n    $(this).addClass(\"footeractive\").siblings().removeClass(\"footeractive\");\n  });\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n  render: render,\n  ibar: ibar\n});\n\n//# sourceURL=webpack:///./src/js/indexj/header.js?");
+
+/***/ }),
+
+/***/ "./src/js/indexj/home_hot.js":
+/*!***********************************!*\
+  !*** ./src/js/indexj/home_hot.js ***!
+  \***********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _indexh_home_hot_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../indexh/home_hot.html */ \"./src/js/indexh/home_hot.html\");\n/* harmony import */ var _indexh_home_hot_html__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_indexh_home_hot_html__WEBPACK_IMPORTED_MODULE_0__);\n\n\nvar render = function render() {\n  $(\"main\").html(_indexh_home_hot_html__WEBPACK_IMPORTED_MODULE_0___default.a);\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n  render: render\n});\n\n//# sourceURL=webpack:///./src/js/indexj/home_hot.js?");
 
 /***/ }),
 
@@ -3319,7 +3432,103 @@ eval("var header = __webpack_require__(/*! ../indexh/header.html */ \"./src/js/i
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/regenerator */ \"./node_modules/_@babel_runtime@7.1.2@@babel/runtime/regenerator/index.js\");\n/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/asyncToGenerator */ \"./node_modules/_@babel_runtime@7.1.2@@babel/runtime/helpers/asyncToGenerator.js\");\n/* harmony import */ var _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _indexh_home_main_html__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../indexh/home_main.html */ \"./src/js/indexh/home_main.html\");\n/* harmony import */ var _indexh_home_main_html__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_indexh_home_main_html__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _dataj_home_main__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../dataj/home_main */ \"./src/js/dataj/home_main.js\");\n\n\n\n\n\nvar render =\n/*#__PURE__*/\nfunction () {\n  var _ref = _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1___default()(\n  /*#__PURE__*/\n  _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee() {\n    var result, data, template, html;\n    return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {\n      while (1) {\n        switch (_context.prev = _context.next) {\n          case 0:\n            _context.next = 2;\n            return _dataj_home_main__WEBPACK_IMPORTED_MODULE_3__[\"default\"].home_main();\n\n          case 2:\n            result = _context.sent;\n            data = result.data;\n            template = Handlebars.compile(_indexh_home_main_html__WEBPACK_IMPORTED_MODULE_2___default.a);\n            html = template({\n              data: data\n            });\n            $(\"main\").html(html);\n\n          case 7:\n          case \"end\":\n            return _context.stop();\n        }\n      }\n    }, _callee, this);\n  }));\n\n  return function render() {\n    return _ref.apply(this, arguments);\n  };\n}();\n\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n  render: render\n});\n\n//# sourceURL=webpack:///./src/js/indexj/home_main.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/regenerator */ \"./node_modules/_@babel_runtime@7.1.2@@babel/runtime/regenerator/index.js\");\n/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/asyncToGenerator */ \"./node_modules/_@babel_runtime@7.1.2@@babel/runtime/helpers/asyncToGenerator.js\");\n/* harmony import */ var _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _indexh_home_main_html__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../indexh/home_main.html */ \"./src/js/indexh/home_main.html\");\n/* harmony import */ var _indexh_home_main_html__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_indexh_home_main_html__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _dataj_home_main__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../dataj/home_main */ \"./src/js/dataj/home_main.js\");\n\n\n\n\n\nvar render =\n/*#__PURE__*/\nfunction () {\n  var _ref = _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1___default()(\n  /*#__PURE__*/\n  _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee() {\n    var result, data, template, html;\n    return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {\n      while (1) {\n        switch (_context.prev = _context.next) {\n          case 0:\n            _context.next = 2;\n            return _dataj_home_main__WEBPACK_IMPORTED_MODULE_3__[\"default\"].home_main();\n\n          case 2:\n            result = _context.sent;\n            data = result.data;\n            template = Handlebars.compile(_indexh_home_main_html__WEBPACK_IMPORTED_MODULE_2___default.a);\n            html = template({\n              data: data\n            });\n            $(\"main\").html(html);\n\n          case 7:\n          case \"end\":\n            return _context.stop();\n        }\n      }\n    }, _callee, this);\n  }));\n\n  return function render() {\n    return _ref.apply(this, arguments);\n  };\n}();\n\nvar ibar = function ibar() {\n  $(\"nav li\").on(\"tap\", function () {\n    var hashs = ['#content', '#recomend', '#hot', '#vedio'];\n    location.hash = hashs[$(this).index()];\n    $(this).addClass('active').siblings().removeClass('active');\n  });\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n  render: render,\n  ibar: ibar\n});\n\n//# sourceURL=webpack:///./src/js/indexj/home_main.js?");
+
+/***/ }),
+
+/***/ "./src/js/indexj/home_main_ibar.js":
+/*!*****************************************!*\
+  !*** ./src/js/indexj/home_main_ibar.js ***!
+  \*****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/regenerator */ \"./node_modules/_@babel_runtime@7.1.2@@babel/runtime/regenerator/index.js\");\n/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/asyncToGenerator */ \"./node_modules/_@babel_runtime@7.1.2@@babel/runtime/helpers/asyncToGenerator.js\");\n/* harmony import */ var _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _indexh_home_main_html__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../indexh/home_main.html */ \"./src/js/indexh/home_main.html\");\n/* harmony import */ var _indexh_home_main_html__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_indexh_home_main_html__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _indexh_home_main_ibar_html__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../indexh/home_main_ibar.html */ \"./src/js/indexh/home_main_ibar.html\");\n/* harmony import */ var _indexh_home_main_ibar_html__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_indexh_home_main_ibar_html__WEBPACK_IMPORTED_MODULE_3__);\n/* harmony import */ var _dataj_home_main__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../dataj/home_main */ \"./src/js/dataj/home_main.js\");\n\n\n\n\n\n\nvar render = function render() {\n  $(\".uncommon\").html(_indexh_home_main_ibar_html__WEBPACK_IMPORTED_MODULE_3___default.a);\n  render1();\n};\n\nvar render1 =\n/*#__PURE__*/\nfunction () {\n  var _ref = _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1___default()(\n  /*#__PURE__*/\n  _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee() {\n    var result, data, template, html;\n    return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {\n      while (1) {\n        switch (_context.prev = _context.next) {\n          case 0:\n            console.log(\"aaaa\");\n            _context.next = 3;\n            return _dataj_home_main__WEBPACK_IMPORTED_MODULE_4__[\"default\"].home_main();\n\n          case 3:\n            result = _context.sent;\n            data = result.data;\n            template = Handlebars.compile(_indexh_home_main_html__WEBPACK_IMPORTED_MODULE_2___default.a);\n            html = template({\n              data: data\n            });\n            $(\"main\").html(html);\n\n          case 8:\n          case \"end\":\n            return _context.stop();\n        }\n      }\n    }, _callee, this);\n  }));\n\n  return function render1() {\n    return _ref.apply(this, arguments);\n  };\n}();\n\nvar ibar = function ibar() {\n  $(\"nav li\").on(\"tap\", function () {\n    var hashs = ['#content', '#recomend', '#hot', '#vedio'];\n    location.hash = hashs[$(this).index()];\n    $(this).addClass('active').siblings().removeClass('active');\n  });\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n  render: render,\n  ibar: ibar\n});\n\n//# sourceURL=webpack:///./src/js/indexj/home_main_ibar.js?");
+
+/***/ }),
+
+/***/ "./src/js/indexj/home_recommend.js":
+/*!*****************************************!*\
+  !*** ./src/js/indexj/home_recommend.js ***!
+  \*****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _indexh_home_recommend_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../indexh/home_recommend.html */ \"./src/js/indexh/home_recommend.html\");\n/* harmony import */ var _indexh_home_recommend_html__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_indexh_home_recommend_html__WEBPACK_IMPORTED_MODULE_0__);\n\n\nvar render = function render() {\n  $(\"main\").html(_indexh_home_recommend_html__WEBPACK_IMPORTED_MODULE_0___default.a);\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n  render: render\n});\n\n//# sourceURL=webpack:///./src/js/indexj/home_recommend.js?");
+
+/***/ }),
+
+/***/ "./src/js/indexj/home_vedio.js":
+/*!*************************************!*\
+  !*** ./src/js/indexj/home_vedio.js ***!
+  \*************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _indexh_home_vedio_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../indexh/home_vedio.html */ \"./src/js/indexh/home_vedio.html\");\n/* harmony import */ var _indexh_home_vedio_html__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_indexh_home_vedio_html__WEBPACK_IMPORTED_MODULE_0__);\n\n\nvar render = function render() {\n  $(\"main\").html(_indexh_home_vedio_html__WEBPACK_IMPORTED_MODULE_0___default.a);\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n  render: render\n});\n\n//# sourceURL=webpack:///./src/js/indexj/home_vedio.js?");
+
+/***/ }),
+
+/***/ "./src/js/indexj/idea.js":
+/*!*******************************!*\
+  !*** ./src/js/indexj/idea.js ***!
+  \*******************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _indexh_idea_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../indexh/idea.html */ \"./src/js/indexh/idea.html\");\n/* harmony import */ var _indexh_idea_html__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_indexh_idea_html__WEBPACK_IMPORTED_MODULE_0__);\n\n\nvar render = function render() {\n  $(\".uncommon\").html(_indexh_idea_html__WEBPACK_IMPORTED_MODULE_0___default.a);\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n  render: render\n});\n\n//# sourceURL=webpack:///./src/js/indexj/idea.js?");
+
+/***/ }),
+
+/***/ "./src/js/indexj/message.js":
+/*!**********************************!*\
+  !*** ./src/js/indexj/message.js ***!
+  \**********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _indexh_message_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../indexh/message.html */ \"./src/js/indexh/message.html\");\n/* harmony import */ var _indexh_message_html__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_indexh_message_html__WEBPACK_IMPORTED_MODULE_0__);\n\n\nvar render = function render() {\n  $(\".uncommon\").html(_indexh_message_html__WEBPACK_IMPORTED_MODULE_0___default.a);\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n  render: render\n});\n\n//# sourceURL=webpack:///./src/js/indexj/message.js?");
+
+/***/ }),
+
+/***/ "./src/js/indexj/mine.js":
+/*!*******************************!*\
+  !*** ./src/js/indexj/mine.js ***!
+  \*******************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _indexh_mine_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../indexh/mine.html */ \"./src/js/indexh/mine.html\");\n/* harmony import */ var _indexh_mine_html__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_indexh_mine_html__WEBPACK_IMPORTED_MODULE_0__);\n\n\nvar render = function render() {\n  $(\".uncommon\").html(_indexh_mine_html__WEBPACK_IMPORTED_MODULE_0___default.a);\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n  render: render\n});\n\n//# sourceURL=webpack:///./src/js/indexj/mine.js?");
+
+/***/ }),
+
+/***/ "./src/js/utils/router.js":
+/*!********************************!*\
+  !*** ./src/js/utils/router.js ***!
+  \********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\nfunction Router() {\n  this.routes = {};\n  this.inowHash = '';\n} //空函数\n\n\nvar noop = function noop() {}; //哈希的注册\n\n\nRouter.prototype.route = function (hash, cb) {\n  this.inowHash = hash;\n  this.routes[this.inowHash] = cb || noop;\n}; //刷新\n\n\nRouter.prototype.refresh = function () {\n  this.inowHash = location.hash || '#content';\n  this.routes[this.inowHash]();\n  this.ibar();\n}; //高亮切换\n\n\nRouter.prototype.ibar = function () {\n  var arr = ['#content', '#recomend', '#hot', '#vedio'];\n  var index = arr.indexOf(this.inowHash); //console.log(index);\n\n  $(\"nav li\").eq(index).addClass(\"active\").siblings().removeClass(\"active\");\n}; //监听\n\n\nRouter.prototype.init = function () {\n  window.addEventListener('load', this.refresh.bind(this));\n  window.addEventListener('hashchange', this.refresh.bind(this));\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (Router);\n\n//# sourceURL=webpack:///./src/js/utils/router.js?");
+
+/***/ }),
+
+/***/ "./src/js/utils/routerMain.js":
+/*!************************************!*\
+  !*** ./src/js/utils/routerMain.js ***!
+  \************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\nfunction Router() {\n  this.routes = {};\n  this.inowHash = '';\n} //空函数\n\n\nvar noop = function noop() {}; //哈希的注册\n\n\nRouter.prototype.route = function (hash, cb) {\n  this.inowHash = hash;\n  this.routes[this.inowHash] = cb || noop;\n}; //刷新\n\n\nRouter.prototype.refresh = function () {\n  this.inowHash = location.hash;\n  this.routes[this.inowHash]();\n  this.ibar();\n}; //高亮切换\n\n\nRouter.prototype.ibar = function () {\n  var arr = ['#main', '#ides', '#collage', '#message', '#mine'];\n  var index = arr.indexOf(this.inowHash); //console.log(index);\n  // if(index==0){\n  //     this.loading();\n  // }\n\n  $(\"footer li\").eq(index).addClass(\"footeractive\").siblings().removeClass(\"footeractive\");\n}; //监听\n\n\nRouter.prototype.init = function () {\n  window.addEventListener('load', this.refresh.bind(this));\n  window.addEventListener('hashchange', this.refresh.bind(this));\n}; // Router.prototype.loading=function(){\n//     setTimeout(() => {\n//         location.reload(false);\n//     }, 0);\n// }\n\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (Router);\n\n//# sourceURL=webpack:///./src/js/utils/routerMain.js?");
 
 /***/ }),
 
